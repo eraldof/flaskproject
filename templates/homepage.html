@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title></title>
 </head>
+
 <body>
+    <i class="bi bi-list menu-mobile"></i>
+
     <aside id='header'>
         <section class="profile">
             <img src="../static/images/eraldo.jpg" alt="Foto de perfil">
             <h1>Eraldo Rocha</h1>
-            <div class="social-links mt-4 text-center" >
-                <a target="_bank" href="https://www.instagram.com/e_tenoriof/" >
+            <div class="social-links mt-4 text-center">
+                <a target="_bank" href="https://www.instagram.com/e_tenoriof/">
                     <i class="bi bi-instagram"></i>
                 </a>
                 <a target="_bank" href="https://www.linkedin.com/in/eraldo-rocha-044652232/">
@@ -31,22 +35,22 @@
         <nav id="navbar" class="nav-menu">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
-                    <i class="bi bi-house"></i>Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="bi bi-house"></i>Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <i class="bi bi-file-person"></i>Sobre mim</a>
+                    <a class="nav-link" href="#sobre">
+                        <i class="bi bi-person-circle"></i>Sobre mim</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <i class="bi bi-list-check"></i>Habilidades</a>
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-list-check"></i>Habilidades</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <i class="bi bi-code-slash"></i>Projetos</a>
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-code-slash"></i>Projetos</a>
                 </li>
-              </ul>
+            </ul>
         </nav>
 
     </aside>
@@ -62,13 +66,53 @@
                 <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
                 <a href=""></a>
             </div>
-
         </section>
 
+
+        <section class="container mt-4" id='sobre'>
+            <div class="row mt-2">
+                <div class="col-md-4 mt-4">
+                    <img class="img-fluid shadow" src="../static/images/superman.jpg" alt="foto-sobre-mim"
+                        data-anime="left">
+                </div>
+                <div class="col-md-8" data-anime="right">
+                    <h3 class='pt-3'>Sobre mim</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                        lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique
+                        senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna,
+                        auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                        lobortis condimentum. Aliquam nonummy auctor massa. </p>
+
+                    <div class="row mt-3 mb-3">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush fs-6">
+                                <li class="list-group-item">Aniversário: <span class="fw-lighter">4 de Fevereiro</span>
+                                </li>
+                                <li class="list-group-item">Estado: <span class="fw-lighter">Pernambuco</span></li>
+                                <li class="list-group-item">Formação: <span class="fw-lighter">Bacharelado em
+                                        estatística</span></li>
+                                <li class="list-group-item">Experiência: <span class="fw-lighter">Iniciante</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush fs-6">
+                                <li class="list-group-item">Idade: <span class="fw-lighter">25 anos</span></li>
+                                <li class="list-group-item">Cidade: <span class="fw-lighter">Recife</span></li>
+                                <li class="list-group-item">Hobby: <span class="fw-lighter">Praticar esportes</span>
+                                </li>
+
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>
 </body>
+
 </html>

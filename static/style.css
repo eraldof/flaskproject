@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 html, body{
     font-family: Ubuntu, Arial;
     width: 100%;
     height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(5, 5, 39) rgb(255, 255, 255);
+    box-shadow: inset 0 0 0.3rem rgb(5, 5, 39);
 }
 
 #header {
@@ -14,17 +17,18 @@ html, body{
     background: #010211;
     overflow-y: auto;
     width: 300px;
-    transition: all ease-in-out 05.s;
+    transition: all ease-in-out 0.6s;
 }
 
 #header .profile img{
     margin: 15px auto;
     display: block;
     width: 150px;
-    border: 4px solid #454a68;
+    border: 4px solid #4d94ff;
     border-radius: 50%;
 
 }
+
 
 #header .profile h1{
     font-size: 24px;
@@ -39,17 +43,19 @@ html, body{
 
 #header .profile .social-links a{
     font-size: 1.4rem;
-    background: #454a68;
     color: #ffff;
-    padding: 0.6rem;
-    margin-right: 2rem;
-    border-radius: 50%;
+    padding: 10px; 
+    margin-right: 1.6rem;
+    border-radius: 60%;
     transition: 0.3s;
     text-decoration: none;
+    
 }
 
 #header .profile .social-links a:hover{
-    background: #128ec7;
+    justify-content: center;
+    align-items: center;
+    background: #fc37a3;
 }
 
 .nav-menu{
@@ -77,7 +83,7 @@ html, body{
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover > a{
-    color: #3a80d1;
+    color: #4d94ff;
 
 }
 
@@ -100,15 +106,75 @@ section#inicio{
 
 section#inicio h2{
     margin-right: 1rem;
-    font-size: 4rem;   
+    font-size: 4.5rem;   
 }
 
 section#inicio span#subtitle{
-    margin-right: 2rem;
-    font-size: 1.2rem;
+    margin-right: 1rem;
+    font-size: 1.4rem;
 }
 
 .text-shadow{
-    text-shadow: 4px 4px 10px #000000;
+    text-shadow: 6px 6px 12px #000000;
+}
 
+
+i.menu-mobile{
+    position: fixed;
+    color: #ffff;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;   
+    background-color: #090c3f; 
+}
+
+.menu-nav-active{
+    overflow: hidden;
+}
+
+.menu-nav-active #header{
+    left: 0;
+}
+
+
+
+@media(max-width: 900px){
+    #header{
+        left: -300px
+    }
+    i.menu-mobile{
+        display: flex;
+    }
+    section#inicio h2{
+        font-size: 3rem;
+    }
+    section#inicio span#subtitle{
+        margin-right: 1;
+        font-size: 1.1rem;
+    }
+    #main{
+        margin-left: 0;
+    }
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+  
+*::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #00000050;
+    background-color: #fff ;
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: #252c90;
 }
