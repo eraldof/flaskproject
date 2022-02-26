@@ -44,8 +44,7 @@ html, body{
 #header .profile .social-links a{
     font-size: 1.4rem;
     color: #ffff;
-    padding: 10px; 
-    margin-right: 1.6rem;
+    margin-right: 10px;
     border-radius: 60%;
     transition: 0.3s;
     text-decoration: none;
@@ -53,13 +52,20 @@ html, body{
 }
 
 #header .profile .social-links a:hover{
-    justify-content: center;
-    align-items: center;
     background: #fc37a3;
+    padding: 3% 1%;
 }
 
+
+
+
+
+
+
 .nav-menu{
-    padding: 1.5rem;
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .nav-menu a,
@@ -68,13 +74,13 @@ html, body{
     align-items: center;
     color: #b2b3b9;
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .nav-menu a i,
 .nav-menu a:focus i{
-    font-size: 24px;
-    padding-right: 0.8rem;
+    font-size: 25px;
+    padding-right: 1rem;
     color: #b2b3b9;
 
 }
@@ -84,6 +90,7 @@ html, body{
 .nav-menu .active:focus,
 .nav-menu li:hover > a{
     color: #4d94ff;
+    padding: 12px;
 
 }
 
@@ -177,4 +184,8 @@ i.menu-mobile{
   
 *::-webkit-scrollbar-thumb {
     background-color: #252c90;
+}
+
+.section-bg{
+    background-color: #e2e2e2;
 }
